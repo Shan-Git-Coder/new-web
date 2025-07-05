@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Official</title>
+    <link rel="stylesheet" href="Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+<!-- Navbar -->
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Shan Tech</h1>
+        </div>
+
+        <div class="links" id="navLinks">
+
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="research.html">Researches</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="Contact.html">Contact</a>
+
+        </div>
+
+        <div class="btn">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="vis" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+
+
+<!--Heading Section-->
+    <div class="main-bio">
+        <div class="title">
+            <h1>Sabesan Anoshan</h1>
+            <h4 id="h4">Hello there! I'm Studying Software Developement <br> at VCOT College. <br> Now I'm Learning Myself about Cyber Security, <br> Malware Attacks, and DSA. </h4>
+            <button class="Research"><a href="research.html">Research View</a></button> <br>
+            <button class="brand"><a href=""><i class="fa-brands fa-linkedin"></i></a></button>
+            <button class="brand"><a href=""><i class="fa-brands fa-facebook"></i></a></button>
+            <button class="brand"><a href=""><i class="fa-brands fa-youtube"></i></a></button>
+            <button class="brand"><a href="https://github.com/Shan-Git-Coder"><i class="fa-brands fa-github"></i></a></button>
+        </div>
+
+        <div class="img">
+            <img src="IMG-20250223-WA0031.jpg" alt="Profile-Bio" width="550px">
+        </div>
+    </div>
+
+
+
+
+    <!---Card Section-->
+    <div class="cards">
+        <div class="card">
+            <img src="Img/JAVA.jpg" height="250px" width="300px" id="img">
+            <h2 onclick="gotojavareserch()"><a href="research.html">Java Concepts</a></h2>
+            <h4>I'm Worked on Some Projects in Java Using DSA. and I Built Lot of Console Applications like for Online Billing, Rank Checking , and etc Systems.</h4>
+        </div>
+
+        <div class="card">
+            <img src="Img/JAVA.jpg" height="250px" width="300px" id="img">
+            <h2 onclick="gotojavareserch()"><a href="research.html">Java Concepts</a></h2>
+            <h4>I'm Worked on Some Projects in Java Using DSA. and I Built Lot of Console Applications like for Online Billing, Rank Checking , and etc Systems.</h4>
+        </div>
+
+        <div class="card">
+            <img src="Img/JAVA.jpg" height="250px" width="300px" id="img">
+            <h2 onclick="gotojavareserch()"><a href="research.html">Java Concepts</a></h2>
+            <h4>I'm Worked on Some Projects in Java Using DSA. and I Built Lot of Console Applications like for Online Billing, Rank Checking , and etc Systems.</h4>
+        </div>
+         
+    </div>
+
+    <div class="copyright">
+        <div class="cright">
+            <h5>2025 © Sabesan Anoshan.</h5>
+        </div>
+    </div> 
+    
+
+    <!--Js Code-->
+<script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+

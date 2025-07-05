@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: max-content;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+    margin-top: 2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1em;
+    background-color: #ffffff;
+    height: 60px;
+
+}
+
+.logo h1 {
+    font-size: 2em;
+    color: #000;
+}
+
+.links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: rgb(0, 110, 255);
+}
+
+.btn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 1.5em;
+    color: #000;
+}
+
+/* Responsive Navbar */
+#vis {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    #vis {
+        display: inline-block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .btn {
+        display: flex;
+        gap: 0.5em;
+    }
+    #search{
+        display: none;
+    }
+}
+
+.main-bio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(241, 244, 250);
+    height: auto;
+    padding: 2em 5%;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.main-bio .title h1 {
+    font-size: 3em;
+    font-family: 'Jost';
+    font-weight: 700;
+    color: #000;
+}
+
+.main-bio .title #h4 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: #665e5e;
+    line-height: 1.6;
+    font-size: 1em;
+    max-width: 100%;
+}
+.Research {
+    padding: 1em 2em;
+    border: none;
+    background-color: rgb(0, 110, 255);
+    font-weight: bold;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.Research > a{
+    text-decoration: none;
+    color: #fff;
+}
+.Research:hover {
+    background-color: rgb(105, 170, 255);
+}
+
+.img > img {
+    border-radius: 1em;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.brand {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #000;
+}
+
+.brand a:hover {
+    color: rgb(0, 110, 255);
+    transition: all 0.5s ease;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 3em;
+
+}
+.cards {
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 8em;
+    margin-bottom: 5em;
+}
+.cards > .card {
+
+    max-width: 300px;
+    height: auto;
+    border-top: 2px solid #000;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+/*Heading*/
+@media (max-width: 992px) {
+    .main-bio {
+        flex-wrap: wrap-reverse;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .main-bio .title h1 {
+        font-size: 2.5em;
+    }
+
+    .main-bio .title #h4 {
+        font-size: 1em;
+    }
+
+    .img >img {
+        max-width: 80%;
+    }
+
+    .brand {
+        font-size: 1.3em;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        text-align: center;
+    }
+    .card > img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-bio .title h1 {
+        font-size: 2em;
+    }
+
+    .main-bio .title #h4 {
+        font-size: 0.95em;
+    }
+    .title {
+        text-align: left;
+    }
+    .Research {
+        padding: 0.8em 1.5em;
+        font-size: 0.9em;
+    }
+
+    .brand {
+        font-size: 1.2em;
+    }
+}
